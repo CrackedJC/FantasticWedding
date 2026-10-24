@@ -1,0 +1,351 @@
+/* Color Palette :
+   - Navy Blue : #112239
+   - Soft Navy : #1C3557
+   - Beige : #F9F6F0
+   - Warm Beige : #EFE9DF
+   - Gold : #C5A880 */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #112239;
+    background-color: #F9F6F0;
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .couple-names, .timer-number, .footer-names {
+    font-family: 'Playfair Display', serif;
+}
+
+.section-padding {
+    padding: 90px 0;
+}
+
+.bg-navy {background-color: #112239;}
+.bg-beige {background-color: #F9F6F0;}
+.bg-beige-dark {background-color: #EFE9DF;}
+
+.text-navy {color: #112239;}
+.text-beige {color: #F9F6F0;}
+.text-beige-muted {color: #b8b2a6;}
+.tracking-wide {
+    letter-spacing: 3px;
+}
+
+.section-subtitle {
+    font-size: 0.85rem;
+    letter-spacing: 3.5px;
+    color: #C5A880;
+    font-weight: 700;
+}
+
+.section-title {
+    font-size: 2.6rem;
+    font-weight: 700;
+}
+
+.divider-line {
+    width: 80px;
+    height: 2px;
+    background-color: #C5A880;
+}
+
+.btn-custom-beige {
+    background-color: #F9F6F0;
+    color: #112239;
+    border: 2px solid #F9F6F0;
+    border-radius: 50px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-custom-beige:hover {
+    background-color: #C5A880;
+    border-color: #C5A880;
+    color: #112239;
+    transform: translateY(-2px);
+}
+
+.btn-outline-beige {
+    background-color: transparent;
+    color: #F9F6F0;
+    border: 2px solid #F9F6F0;
+    border-radius: 50px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-beige:hover {
+    background-color: #F9F6F0;
+    color: #112239;
+    transform: translateY(-2px);
+}
+
+.btn-custom-navy {
+    background-color: #112239;
+    color: #F9F6F0;
+    border: 2px solid #112239;
+    border-radius: 50px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-custom-navy:hover {
+    background-color: #1C3557;
+    border-color: #1C3557;
+    color: #F9F6F0;
+    transform: translateY(-2px);
+}
+
+.hero-section {
+    min-height: 100vh;
+    background: linear-gradient(rgba(17, 34, 57, 0.82), rgba(17, 34, 57, 0.88)),
+                url('Background.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #F9F6F0;
+    padding: 20px;
+}
+
+.hero-content {
+    max-width: 780px;
+    padding: 50px 30px;
+    border: 1px solid rgba(249, 246, 240, 0.25);
+    border-radius: 12px;
+    background-color: rgba(17, 34, 57, 0.35);
+    backdrop-filter: blur(4px);
+}
+
+.hero-section .subtitle {
+    font-size: 0.9rem;
+    color: #C5A880;
+}
+
+.couple-names {
+    font-weight: 700;
+    font-style: italic;
+    color: #F9F6F0;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.wedding-date {
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.couple-intro-text {
+    max-width: 650px;
+    font-style: italic;
+    color: #4a5568;
+}
+
+.couple-img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border: 6px solid #EFE9DF;
+    outline: 2px solid #C5A880;
+    transition: transform 0.4s ease;
+}
+
+.couple-img:hover {
+    transform: scale(1.2);
+}
+
+.couple-single-name {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #112239;
+}
+
+.couple-bio {
+    font-size: 0.98rem;
+    color: #3b4859;
+    max-width: 380px;
+    margin: 0 auto;
+}
+
+/* heart icon animation */
+.heart-divider {
+    color: #C5A880;
+    animation: gentlePulse 2s infinite ease-in-out;
+}
+
+@keyframes gentlePulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+}
+
+.event-card {
+    background-color: #F9F6F0;
+    color: #112239;
+    border-radius: 16px;
+    border-bottom: 5px solid #C5A880 !important;
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-6px);
+}
+
+.event-icon {
+    color: #C5A880;
+}
+
+.event-divider {
+    width: 60px;
+    border-top: 2px solid #C5A880;
+    opacity: 0.8;
+}
+
+.timer-box {
+    background-color: #112239;
+    color: #F9F6F0;
+    border-radius: 12px;
+    border: 1px solid #C5A880;
+    transition: transform 0.2s ease;
+}
+
+.timer-box:hover {
+    transform: translateY(-3px);
+}
+
+.timer-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #F9F6F0;
+    line-height: 1.2;
+}
+
+.timer-label {
+    color: #C5A880;
+    letter-spacing: 2px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.gallery-img {
+    height: 520px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.bg-navy-translucent {
+    background-color: rgba(17, 34, 57, 0.78);
+    border: 1px solid rgba(197, 168, 128, 0.4);
+}
+
+.rsvp-card {
+    background-color: #F9F6F0;
+    border-radius: 16px;
+    border-top: 5px solid #112239 !important;
+}
+
+.custom-input {
+    background-color: #ffffff;
+    border: 1px solid #d5cfc2;
+    border-radius: 8px;
+    padding: 12px 15px;
+    color: #112239;
+}
+
+.custom-input:focus {
+    border-color: #112239;
+    box-shadow: 0 0 0 0.2rem rgba(17, 34, 57, 0.15);
+}
+
+.recent-wishes-title {
+    font-size: 1.4rem;
+    color: #112239;
+}
+
+.wish-item {
+    border-left: 4px solid #112239;
+}
+
+.bg-navy-badge {
+    background-color: #112239;
+    color: #F9F6F0;
+    font-weight: 400;
+    padding: 5px 10px;
+}
+
+.footer-section {
+    border-top: 3px solid #C5A880;
+}
+
+.footer-names {
+    font-style: italic;
+    font-size: 2.2rem;
+}
+
+@media (max-width: 768px) {
+    .section-padding {
+        padding: 65px 0;
+    }
+
+    .hero-section {
+        background-attachment: scroll;
+    }
+
+    .hero-content {
+        padding: 35px 20px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .gallery-img {
+        height: 320px;
+    }
+
+    .timer-number {
+        font-size: 2rem;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+.footer-section {
+    border-top: 3px solid #C5A880;
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.footer-section::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    background-image: url('flowers.png');
+    background-repeat: repeat-x;
+    background-position: bottom center;
+    background-size: auto 128px;
+    image-rendering: pixelated;
+    
+    pointer-events: none;
+}
